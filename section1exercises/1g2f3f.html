@@ -1,5 +1,14 @@
 <!-- try to copy design shown on screen of tutorial (like amazon website) -->
 <style>
+  .link {
+    transition: color .15s;
+  }
+
+  .link:hover {
+    color:rgb(206, 123, 22);
+    cursor: pointer;
+  }
+  
   .title {
     font-size: 30px;
     font-weight: bold;
@@ -24,6 +33,16 @@
     border-radius: 18px;
     font-size: 15px;
     margin-right: 8px;
+    transition: opacity .15s;
+  }
+
+  .cart:hover {
+    cursor: pointer;
+    background-color: rgb(228, 193, 17);
+  }
+
+  .cart:active {
+    opacity: .4;
   }
 
   .buy {
@@ -34,9 +53,18 @@
     border-radius: 18px;
     font-size: 15px;
   }
+
+  .buy:hover {
+    cursor: pointer;
+    background-color: rgb(208, 134, 24);
+  }
+
+  .buy:active {
+    opacity: 0.4;
+  }
 </style> 
 
-<a href = "https://www.amazon.com/">Back to Amazon</a>
+<a href = "https://www.amazon.com/" class="link">Back to Amazon</a>
  <p class="title">
   Nike Black Running Shoes
 </p>
